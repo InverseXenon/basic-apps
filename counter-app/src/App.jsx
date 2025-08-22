@@ -20,7 +20,7 @@ function App(){
       <div style={{alignContent:"center"}}>
         <p style={{textAlign: "center"}}>{count}</p>
         <button onClick={handleAdd}>Add</button>
-        <button onClick={handleReduce}>Reduce</button>
+        <button disabled={count === 0} onClick={handleReduce}>Reduce</button>
         <button onClick={handleRestart}>Restart</button>
       </div>
     </div>
